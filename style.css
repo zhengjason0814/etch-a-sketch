@@ -1,0 +1,15 @@
+body {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap: 10px;
+}
+
+.container {
+    display:flex;
+    gap: 3px;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 450px;
+}
