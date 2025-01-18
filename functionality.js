@@ -17,8 +17,13 @@ btn.addEventListener("click", generateNewGrid);
 
 
 function changeColor(event) {
+    randomColor = "rgb("
+    for (let i = 0; i < 3; i++) {
+        if (i != 2) randomColor += Math.floor(Math.random() * 256) + ",";
+        else if (i == 2) randomColor += Math.floor(Math.random() * 256) + ")";
+    }
     if (event.target.matches(".container div")) {
-        event.target.style.backgroundColor = "red";
+        event.target.style.backgroundColor = randomColor;
     }
 }
 
