@@ -24,7 +24,10 @@ function changeColor(event) {
     }
     if (event.target.matches(".container div")) {
         event.target.style.backgroundColor = randomColor;
+        event.target.style.opacity = window.getComputedStyle(event.target).getPropertyValue("opacity") - .1;
     }
+
+
 }
 
 function generateNewGrid() {
